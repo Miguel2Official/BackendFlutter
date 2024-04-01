@@ -18,6 +18,12 @@ mis_rutas.get('/Compras', (peticion, respuesta) => {
      .catch((error) => respuesta.status(400).json({ message: error.message }));
  });
 
+ mis_rutas.get('/Compras/:id', (peticion, respuesta) =>{
+  const { id } = peticion.params;
+  esquema_de_compra
+  .findById(id).then((datos) => respuesta.json(datos)).catch((error) => respuesta.json({message: error}));
+});
+
  // actualizar compra
  mis_rutas.put('/Compras/:id', (peticion, respuesta) => {
    const { id } = peticion.params;
