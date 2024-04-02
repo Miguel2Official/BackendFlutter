@@ -16,6 +16,12 @@ mis_rutas.get('/Ventas', (peticion, respuesta) => {
    esquema_de_venta.find()
    .then((datos) => respuesta.json(datos)).catch((error) => respuesta.json({message: error}));
 });
+//obtener una venta por id
+mis_rutas.get('/Ventas/:id', (peticion, respuesta) =>{
+  const { id } = peticion.params;
+  esquema_de_venta
+  .findById(id).then((datos) => respuesta.json(datos)).catch((error) => respuesta.json({message: error}));
+});
 
 //actualizar venta
 mis_rutas.put('/Ventas/:id', (peticion, respuesta) => {

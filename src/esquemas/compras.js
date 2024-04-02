@@ -17,6 +17,10 @@ const esquema_de_compra = mongoose.Schema ({
     Frutas:{
         type: String,
         required: true
+    },
+    Iva:{
+        type: String,
+        required: true
     }
 });
 

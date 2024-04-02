@@ -22,7 +22,9 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/Api/Compras HTTP/1.1
+GET http://localhost:8080/Api/Compras/ HTTP/1.1
+###
+GET http://backflutter.onrender.com/Api/Compras/66073196a8165ac68b09084d HTTP/1.1
 
 ###
 GET http://localhost:8080/Api/Ventas HTTP/1.1
@@ -51,6 +53,6 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/Api/Compras/6607502a020a1a3a136c5506 HTTP/1.1
+DELETE http://backflutter.onrender.com/api/Compras/66073196a8165ac68b09084d HTTP/1.1
 ###
 DELETE http://localhost:8080/Api/Ventas/6607513be0f91ccaf2a4ef93 HTTP/1.1
