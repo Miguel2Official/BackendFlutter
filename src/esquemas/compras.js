@@ -19,7 +19,7 @@ const esquema_de_compra = mongoose.Schema ({
         required: true
     },
     Iva:{
-        type: String,
+        type: Number,
         required: true
     }
 });
