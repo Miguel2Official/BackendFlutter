@@ -27,7 +27,7 @@ mis_rutas.get('/Compras', (peticion, respuesta) => {
  // actualizar compra
  mis_rutas.put('/Compras/:id', (peticion, respuesta) => {
    const { id } = peticion.params;
-   const { Proveedores, Lacteos, Esencias, Frutas } = peticion.body;
+   const { Proveedores, Lacteos, Esencias, Frutas, Iva } = peticion.body;
  
    const datosActualizados = {
      Proveedores,
