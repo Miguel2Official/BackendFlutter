@@ -33,7 +33,8 @@ mis_rutas.get('/Compras', (peticion, respuesta) => {
      Proveedores,
      Lacteos,
      Esencias,
-     Frutas 
+     Frutas ,
+     Iva
    };
  
    console.log('Datos actualizados:', datosActualizados); 
